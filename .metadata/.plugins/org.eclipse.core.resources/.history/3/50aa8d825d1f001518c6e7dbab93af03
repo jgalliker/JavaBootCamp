@@ -1,0 +1,35 @@
+package lab21WIP;
+import java.io.File;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+		
+public class CountriesTextFile {
+	
+	static ArrayList<String> countries = null;
+	static Path countriesPath = Paths.get("countries.txt");
+	static File countriesFile = countriesPath.toFile();
+	
+	public static ArrayList<String> readCountries() {
+		if (countries != null)
+			return countries;
+		
+		countries = new ArrayList<>();
+		
+		if (Files.exists (countriesPath))  //prevent the FileNotFoundException
+		{
+			try (BufferedReader in = new Buffered Reader(new FileReader(countriesFile)))
+		}
+		countriesPath = Paths.get("countries.txt");
+		if 
+		return null;
+	}
+
+	public static void writeCountry(String country) {
+		// write the country name to countries.txt file
+	}
+	
+	
+	
+}
+	

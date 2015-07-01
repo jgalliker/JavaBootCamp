@@ -1,0 +1,11 @@
+package lab12wip;
+
+public class MyValidator {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Welcome to the Validation Tester application");
+
+	}
+
+}

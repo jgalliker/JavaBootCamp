@@ -1,0 +1,22 @@
+package wIP;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+		OOValidator val = new OOValidator(sc);
+		
+		//int x = new OOValidator(sc).getInt(sc, "Enter an integer:     ");
+		
+		int x = val.getInt(sc, "Enter an integer:     ");
+		
+		//int y = new OOValidator(sc).getInt(sc, "Enter an integer:     ", -100, 100);
+		
+		int y = val.getInt(sc, "Enter an integer:     ", -100, 100);
+		
+	    
+	    System.out.println("You entered " + x + " which passes this test");
+	}
+}
+//i = Validator.getInt(sc, "Enter an integer:     ", -100, 100);

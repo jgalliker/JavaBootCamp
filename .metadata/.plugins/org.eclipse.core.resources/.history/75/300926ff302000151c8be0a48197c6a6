@@ -1,0 +1,39 @@
+package lab22Wip;
+
+public class ThreadRunner extends Thread {
+	// instance variables
+
+	private int restAmount;
+	private int speed;
+
+	public ThreadRunner(String name, int restAmount, int speed) {
+		setName(name);
+		this.restAmount = restAmount;
+		this.speed = speed;
+	}
+
+	public void run() {
+		int distance = 0;
+
+		Thread ct = Thread.currentThread();
+
+		while (!ct.isInterrupted() && distance < 1000) {
+			try {
+				int random = (int) (Math.random() * 100);
+				if (restAmount <= random) {
+					distance += speed;
+					System.out.println(getName() + " : " + distance);
+				}
+			Thread.sleep(100); 
+			}
+			catch
+					
+					
+				}
+				
+			}
+		}
+
+	}
+
+}

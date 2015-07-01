@@ -1,0 +1,9 @@
+package lab22Wip;
+
+public class ThreadRunner extends Thread
+{
+	
+	
+	
+
+}

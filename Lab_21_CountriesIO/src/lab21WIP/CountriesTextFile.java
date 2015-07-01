@@ -1,0 +1,61 @@
+package lab21WIP;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+
+public class CountriesTextFile {
+
+	static ArrayList<String> countries = null;
+	static Path countriesPath = Paths
+			.get("/Lab_21_CountriesIO/src/lab21WIP/countries.txt");
+	static File countriesFile = countriesPath.toFile();
+
+	public static ArrayList<String> readCountries() {
+		if (countries != null)
+			return countries;
+
+		countries = new ArrayList<>();
+		
+		if (Files.exists(countriesPath)) // prevent the FileNotFoundException
+		{
+			try (BufferedReader in = new BufferedReader(new FileReader(
+					countriesFile))) {
+				String line = in.readLine();
+				while (line != null ) //need for loop to populate array
+					System.out.println(line);
+					line = in.readLine();
+					
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		return countries;
+	}
+	public boolean writeCountry() {
+		try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(countriesFile)))){
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return true;		
+		
+	public static addCountrytoArray() {
+		add(country)
+		
+	}
+	}
+	
+	
+}

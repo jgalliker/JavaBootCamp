@@ -1,0 +1,8 @@
+package lab12wip;
+
+public class MyValidator {
+
+	//public String getRequiredString(String prompt)
+	//public String getChoiceString(String prompt, String s1, String s2)
+	
+}

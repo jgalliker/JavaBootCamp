@@ -1,0 +1,40 @@
+package wIP12;
+import java.util.Scanner;
+
+public class MyValidator extends OOValidator 
+{
+	public MyValidator (Scanner sc) 
+	{
+		super (sc);	
+	}
+	public String getRequiredString(String prompt, Scanner sc)
+	{
+		String s = "";
+		while (true) 
+		{
+			System.out.println(prompt);
+			s = sc.next();	
+			if (s.equals("")) 
+			{
+				System.out.println("Please enter a value");
+				sc.nextLine();
+			}
+	
+			else 
+				return s;
+			}
+	}
+
+
+	public String getChoiceString(String prompt, String s1, s2) {
+		String s = "";
+		while (true) {
+			s = getRequiredString(prompt);
+			if (!s.equalsIgnoreCase (s1) && !s.equalsIgnoreCase (s2)) {
+				System.out.printf("Make sure to enter %s or %s", s1, s2);
+			}
+				else
+					return s;
+		}		
+}
+

@@ -1,0 +1,15 @@
+package lab21WIP;
+
+import java.util.ArrayList;
+
+public class CountriesTextFile {
+
+	public static ArrayList<String> readCountries() {
+		// read the countries file
+		return null;
+	}
+
+	public static void writeCountry(String country) {
+		// write the country name to countries.txt file
+	}
+}

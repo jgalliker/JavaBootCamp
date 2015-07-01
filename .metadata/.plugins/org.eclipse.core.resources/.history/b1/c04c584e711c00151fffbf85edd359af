@@ -1,0 +1,64 @@
+package javaForDummies;
+
+import java.util.Scanner;
+
+public class GuessingGameMethod
+{
+	// static variables at Class level
+	static Scanner sc = new Scanner(System.in);
+	static boolean keepPlaying = true;
+
+	public static void main(String[] args)
+	{
+
+		System.out.println("Play guessing game");
+
+		while (keepPlaying)
+		{
+			playAround();
+		}
+		System.out.println("Thanks for playing");
+	
+
+	public static void playAround()
+	{
+		// variables for loop
+		boolean validInput;
+		int randomNumber;
+		int userGuess;
+		String userAnswer;
+
+		randomNumber = (int) (Math.random() * (10) + 1);
+
+		System.out.println("Thinking of number (Enter between 1 and 10:  )");
+
+		do
+		{
+			userGuess = sc.nextInt();
+			validInput = true;
+			if ((userGuess < 1 || userGuess > 10))
+				System.out.println("Enter between 1 and 10:  ");
+			validInput = false;
+		} while (!validInput);
+		if (userGuess == randomNumber)
+			System.out.println("you are right");
+		else
+			System.out.println("you are wrong" + " the correct number is: "
+					+ randomNumber);
+
+		do
+		{
+			System.out.println("play again? (y or n:  )");
+			userAnswer = sc.next();
+			validInput = true;
+			if (userAnswer.equalsIgnoreCase("y"))
+				;
+			else if (userAnswer.equalsIgnoreCase("n"))
+				;
+			keepPlaying = false;
+
+			// else (validInput = false);
+		} while (!validInput);
+	}
+	}
+}

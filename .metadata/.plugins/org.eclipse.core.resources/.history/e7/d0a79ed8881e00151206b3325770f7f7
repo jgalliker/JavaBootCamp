@@ -1,0 +1,12 @@
+package stackOverflow;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int i = 0;
+		Scanner sc = new Scanner(System.in);
+	    i = Validator.getInt(sc, "Enter an integer:     ", -100, 100);
+	    System.out.println("You entered " + i + " which passes this test");
+	}
+}

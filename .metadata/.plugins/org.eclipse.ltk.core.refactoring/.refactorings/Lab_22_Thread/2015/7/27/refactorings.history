@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;distance&apos; in &apos;lab22Wip.ThreadRunner.ThreadRunner(...)&apos; to &apos;speed&apos;&#x0A;- Original project: &apos;Lab_22_Thread&apos;&#x0A;- Original element: &apos;lab22Wip.ThreadRunner.ThreadRunner(String, int, int).distance&apos;&#x0A;- Renamed element: &apos;distance&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;distance&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;lab22Wip{ThreadRunner.java[ThreadRunner~ThreadRunner~QString;~I~I@distance!185!196!189!196!I!0!true" name="speed" references="true" stamp="1435779425651" version="1.0"/>
+</session>

@@ -1,0 +1,16 @@
+package wIP;
+import java.util.Scanner;
+public class ValidatorTestApp {
+
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+		OOValidator val = new OOValidator(sc);
+		
+		int x = val.getInt("Enter an integer:     ");
+		
+		int y = val.getIntWithinRange("Enter an integer:     ", -100, 100);
+		
+	    System.out.println("You entered " + y + " which passes this test");
+	}
+}

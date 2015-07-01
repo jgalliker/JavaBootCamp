@@ -1,0 +1,22 @@
+package lab22Wip;
+
+public class ThreadRunner extends Thread {
+	// instance variables
+	private String name;
+	private int restAmount;
+	private int distance;
+
+	public ThreadRunner(String name, int restAmount, int distance) {
+		this.name = name;
+		this.restAmount = restAmount;
+		this.distance = distance;
+	}
+	public void run() {
+		int distance = 0
+		
+		Thread ct = Thread.currentThread();
+		while distance < 1000 
+		
+	}
+
+}

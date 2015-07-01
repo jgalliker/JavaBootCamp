@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;FutureValueApp.java&apos; to &apos;Quick Demos and Examples to Test/src/murach5&apos;&#x0A;- Original project: &apos;Murach 5 FutureValueApp&apos;&#x0A;- Destination element: &apos;Quick Demos and Examples to Test/src/murach5&apos;&#x0A;- Original element: &apos;FutureValueApp.java&apos;" description="Copy compilation unit" destination="=Quick Demos and Examples to Test/src&lt;murach5" element1="/src&lt;{FutureValueApp.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1435694062758" units="1" version="1.0"/>
+</session>

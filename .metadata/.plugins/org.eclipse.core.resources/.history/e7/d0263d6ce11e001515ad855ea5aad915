@@ -1,0 +1,66 @@
+package wip19;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class MovieListApplication 
+{
+	public static void main(String[] args) 
+	{		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Welcome to the Movie List Application!");
+		System.out.println();
+		System.out.println("There are 100 movies in this list");
+		
+		String category; //used to search for string category
+		
+		do 
+		{
+			category = getString("What category are you interested in? "); 
+			for (Movie m : movies)
+			{
+				if (m.category.equalsIgnoreCase(category))
+					System.out.println(m.title);
+			}
+			System.out.println();
+		}
+		while (getContinue());
+	}
+				
+	public static ArrayList<Movie> getMovies() 
+	{
+		Movie m; 
+		ArrayList<Movie> movies = new ArrayList<>();
+		for (int i = 1; i <= 100; i++) 
+		{		
+			m = MovieIO.getMovie(i);
+			movies.add(m);
+		}
+		return movies;		
+	
+	public static String getString(String prompt);
+		{
+		String s = "";
+		return movies;
+		}
+	
+	public static String getContinue(String prompt);
+	{
+		choice = getContinue("Continue? (y/n): ");
+	}
+	
+	}
+}
+		
+		
+	/*
+		
+		ArrayList<Movie> movies = new ArrayList<Movie>();
+
+		// for (int i = 1; i < movies.size(); i++) {
+		for (int i = 1; i < 100; i++) {
+			String movieCat = movies.get(i).getCategory();
+		
+			if (movieCat.equalsIgnoreCase("scifi")) {
+				System.out.println(i + ". " + movies.get(i).getTitle());
+
+}*/

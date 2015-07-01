@@ -1,0 +1,46 @@
+package studentInfoApp;
+
+public class Student
+{
+	private String name;
+	private String hometown;
+	private String food;
+
+	public Student(String name, String hometown, String food)
+	{
+		this.name = name;
+		this.hometown = hometown;
+		this.food = food;
+	}
+
+	public String getName()
+	{
+		return name;
+	}
+
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+
+	public String getHometown()
+	{
+		return hometown;
+	}
+
+	public void setHometown(String hometown)
+	{
+		this.hometown = hometown;
+	}
+
+	public String getFood()
+	{
+		return food;
+	}
+
+	public void setFood(String food)
+	{
+		this.food = food;
+	}
+	
+}

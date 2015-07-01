@@ -1,0 +1,8 @@
+package wip19;
+
+public class Movie {
+
+	public String title;
+	public String category;
+	
+}

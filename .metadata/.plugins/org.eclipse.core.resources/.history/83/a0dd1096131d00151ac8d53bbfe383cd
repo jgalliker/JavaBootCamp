@@ -1,0 +1,34 @@
+package lab12wip;
+
+import java.util.Scanner;
+
+public class ValidatorTestApp {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int userChoice;
+
+		System.out.println("Welcome to the Validation Tester application");
+		System.out.println();
+
+		// boolean isValid = false;
+		// while (true) {
+		
+		System.out.println("Do you want to test an integer or double value?");
+		System.out.println("Enter: '1' for  integer or '2' for double)");
+		userChoice = sc.nextInt();
+		sc.nextLine();
+		if (userChoice == 1) {
+			System.out.println("Int Test");
+			System.out.println("Enter an integer between -100 and 100:  ");
+			// call a int validation method;
+		} else if (userChoice == 2) {
+			System.out.println("Double Test");
+			System.out.println("Enter any number between -100 and 100:  ");
+			// call a double validation method;
+		} else {
+			System.out.println("Goodbye");
+			// break;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+package lab22Wip;
+
+public class ThreadRunner extends Thread
+{
+	//instance variables
+	private String name;
+	private int likelihoodRunRest;
+	private int distance;
+	
+	public ThreadRunner (String name, int likehihoodRunRuest, int distance)
+	{
+		this.name = name;
+		this.likelihoodRunRest = likelihoodRunRest;
+		this.distance = distance;
+	}
+		
+		
+	
+}
+	
+

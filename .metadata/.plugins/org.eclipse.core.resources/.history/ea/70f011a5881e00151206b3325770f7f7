@@ -1,0 +1,17 @@
+package lab12wip;
+
+public class OOValidator {
+
+	
+	
+	//public OOValidator(Scanner sc)
+	
+	//public int getInt (String prompt)
+	//public int get IntWithinRange (String prompt, int min, int max)
+	
+	//public double getDouble(String prompt)
+	//public double getDoubleWithinRange (String prompt, double min, double max)
+	
+	
+	
+}

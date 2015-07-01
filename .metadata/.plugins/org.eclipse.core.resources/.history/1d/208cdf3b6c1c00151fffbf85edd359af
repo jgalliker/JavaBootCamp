@@ -1,0 +1,45 @@
+package javaForDummies;
+
+import java.util.Scanner;
+
+public class GuessingGameMethod
+{
+	//variables
+	static Scanner sc = new Scanner(System.in);
+	
+	static boolean keepPlaying = true;
+	
+	public static void main(String[] args)
+	{
+	
+		System.out.println("Play guessing game");
+		
+		while (keepPlaying)
+			{
+				playAround();
+			}
+		System.out.println("Thanks for playing");
+		
+		public static void playAround()
+		{
+			//variables for loop
+			boolean validInput;
+			int randomnNumber;
+			int userGuess;
+			String answer;
+			
+			randomNumber = int ((Math.random() * 10) + 1);
+			System.out.println("Thinking of number (Enter between 1 and 10:  )");
+			
+			
+			
+			//
+		}
+		
+		
+		
+		
+		
+	}
+
+}

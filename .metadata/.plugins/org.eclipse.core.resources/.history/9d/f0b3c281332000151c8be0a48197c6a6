@@ -1,0 +1,22 @@
+package lab22Wip;
+
+import java.util.Scanner;
+
+public class TortoiseHareApp {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Ready, steady ... go!");
+		
+		Thread(Tortoise, 0, 10);
+		Thread(Hare, 90, 100);
+		
+		
+		
+
+		
+		
+	}
+
+}

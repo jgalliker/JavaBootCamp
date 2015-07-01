@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;Validator.getDouble(...)&apos; to &apos;getUsersDoubleInput&apos;&#x0A;- Original project: &apos;CircleCircArea&apos;&#x0A;- Original element: &apos;Validator.getDouble(...)&apos;&#x0A;- Renamed element: &apos;Validator.getUsersDoubleInput(...)&apos;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;getDouble&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;{Validator.java[Validator~getDouble~QScanner;~QString;~D~D" name="getUsersDoubleInput" references="true" stamp="1434983538746" version="1.0"/>
+</session>

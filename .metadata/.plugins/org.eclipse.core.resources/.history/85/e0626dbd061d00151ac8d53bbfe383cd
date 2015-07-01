@@ -1,0 +1,14 @@
+package lab12wip;
+
+import priyaSolution.Validator;
+
+public class ValidatorTestApp {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Welcome to the Validation Tester application");
+
+	}
+
+}
+//choice = Validator.getChoice(sc,"Do you want more information? (y/n) ");

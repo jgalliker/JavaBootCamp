@@ -1,0 +1,81 @@
+package studentInfoApp;
+import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class StudentInfoApp
+{
+	static Scanner sc = new Scanner(System.in);
+
+	public static String getStuInfo(String choice, Student s)
+	{
+		String homeOrFood = choice; 
+		String stuInfo = ""; //switch expression that evaluates to a string 
+		switch (homeOrFood) 
+		{
+		case "hometown":
+			stuInfo = s.getHometown();
+			break;
+		case "favorite food":
+			stuInfo = s.getFood();
+			break;
+		default:
+			System.out.println("Enter a valid response (hometown or food): ");
+			getStuInfo(choice, s);
+			break;
+		}
+		return stuInfo;
+	}
+
+	public static void main(String[] args)
+	{
+
+		//Scanner sc = new Scanner(System.in);
+		int userNumber;
+
+		ArrayList<Student> students = new ArrayList<Student>();
+		students.add(new Student("Blank", "Blank", "Blank"));
+		students.add(new Student("Julia", "Detroit", "Sushi"));
+		students.add(new Student("Li", "Flint", "Subs"));
+		students.add(new Student("Devin", "Brighton", "Pizza"));
+
+		// Student student = students.get(0);
+		// System.out.println(student.getFood());
+
+		System.out.println("Welcome to our Java class. "
+				+ "Which student would you like to learn more about? ");
+		String choice = "Y";
+		while (choice.equalsIgnoreCase("Y"))
+		{
+			try
+			{
+				System.out.print("(enter a number 1-3): ");
+				userNumber = sc.nextInt();
+				Student student = students.get(userNumber);
+				System.out.println("Student " + userNumber + " is "
+						+ student.getName() + ". "
+						+ "What would you like to know about "
+						+ student.getName() + "? "
+						+ "(enter or 'hometown' or 'food'): ");
+				String infoChoice = sc.next();
+				System.out.println(getStuInfo(infoChoice, student));
+				System.out
+						.println("Would you like to know anything else? ('hometown' or 'food' or 'no'): ");
+				infoChoice = sc.next();
+				if (!sc.hasNext("no"))
+				{
+					System.out.println(getStuInfo(infoChoice, student));
+				}
+				choice = "N";
+			} catch (InputMismatchException | IndexOutOfBoundsException e)
+			{
+				// sc.next();
+				System.out.println("Error! Invalid number. Try again.\n");
+				// continue;
+			}
+
+		}
+
+	}
+
+}

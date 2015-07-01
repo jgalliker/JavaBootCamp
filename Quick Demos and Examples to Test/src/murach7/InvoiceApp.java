@@ -1,0 +1,12 @@
+package murach7;
+
+public class InvoiceApp
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

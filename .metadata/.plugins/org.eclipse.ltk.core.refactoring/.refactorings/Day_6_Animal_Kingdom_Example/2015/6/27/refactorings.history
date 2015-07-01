@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 elements to &apos;Quick Demos and Examples to Test/src/day6AnimalKingdom&apos;&#x0A;- Original project: &apos;Day_6_Animal_Kingdom_Example&apos;&#x0A;- Destination element: &apos;Quick Demos and Examples to Test/src/day6AnimalKingdom&apos;&#x0A;- Original elements:&#x0A;     Animal.java&#x0A;     Mammal.java&#x0A;     Dog.java&#x0A;     Cat.java&#x0A;     AnimalKingdom.java" description="Copy compilation units" destination="=Quick Demos and Examples to Test/src&lt;day6AnimalKingdom" element1="/src&lt;{Animal.java" element2="/src&lt;{Mammal.java" element3="/src&lt;{Dog.java" element4="/src&lt;{Cat.java" element5="/src&lt;{AnimalKingdom.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1435694012628" units="5" version="1.0"/>
+</session>

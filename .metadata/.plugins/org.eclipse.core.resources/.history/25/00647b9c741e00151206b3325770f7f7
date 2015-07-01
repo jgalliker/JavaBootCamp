@@ -1,0 +1,36 @@
+package wIP;
+import java.util.Scanner;
+
+public class OOValidator {
+	
+	private Scanner sc;
+	
+	public OOValidator(Scanner sc) {
+		this.sc = sc;
+	}
+
+	public int getInt(String prompt) {
+		while (true) {
+			System.out.print(prompt);
+			if (sc.hasNextInt()) {
+				return sc.nextInt();
+			}
+			System.out.println("Error! Invalid integer value. Try again.");
+			sc.nextLine();
+		}
+	}
+		public int getIntWithinRange(String prompt, int min, int max) {
+			int i = 0;
+			while (true){
+				i = getInt(prompt);
+				if (i < min)
+					System.out.println("Error! Number must be greater than " + min
+							+ ".");
+				else if (i > max)
+					System.out.println("Error! Number must be less than " + max
+							+ ".");
+				else return i;
+				}
+		}
+				
+}

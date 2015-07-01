@@ -1,0 +1,18 @@
+package wIP;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+		OOValidator val = new OOValidator(sc);
+		
+		int x = val.getInt("Enter an integer:     ");
+		
+		int y = val.getIntWithinRange("Enter an integer:     ", -100, 100);
+		
+	    //y = x;
+		
+	    System.out.println("You entered " + y + " which passes this test");
+	}
+}
